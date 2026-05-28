@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" />
+    <PackageReference Include="Hellang.Middleware.ProblemDetails" />
+    <PackageReference Include="FluentValidation.AspNetCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeliveryPlatform.Application\DeliveryPlatform.Application.csproj" />
+    <ProjectReference Include="..\DeliveryPlatform.Infrastructure\DeliveryPlatform.Infrastructure.csproj" />
+    <ProjectReference Include="..\DeliveryPlatform.Persistence.EFCore\DeliveryPlatform.Persistence.EFCore.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Constants\" />
+    <Folder Include="Controllers\Dashboard\" />
+    <Folder Include="Controllers\Deliveries\" />
+    <Folder Include="Controllers\Deliveries\Requests\" />
+    <Folder Include="Controllers\Drivers\" />
+    <Folder Include="Controllers\Nodes\" />
+    <Folder Include="Controllers\Nodes\Requests\" />
+    <Folder Include="Controllers\Vehicles\" />
+    <Folder Include="Controllers\Vehicles\Requests\" />
+    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\uploads\" />
+    <Folder Include="wwwroot\uploads\csv\" />
+  </ItemGroup>
+
+</Project>

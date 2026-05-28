@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeliveryPlatform.Core\DeliveryPlatform.Core.csproj" />
+    <ProjectReference Include="..\DeliveryPlatform.Persistence.EFCore\DeliveryPlatform.Persistence.EFCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" />
+    <PackageReference Include="MediatR" />
+    <PackageReference Include="FluentValidation" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+  </ItemGroup> 
+
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Common\Geocoding\" />
+    <Folder Include="Domain\Deliveries\" />
+    <Folder Include="Domain\Deliveries\Commands\" />
+    <Folder Include="Domain\Deliveries\Commands\CancelDelivery\" />
+    <Folder Include="Domain\Deliveries\Commands\CreateDelivery\" />
+    <Folder Include="Domain\Deliveries\Commands\DeleteDelivery\" />
+    <Folder Include="Domain\Deliveries\Commands\ImportDeliveriesFromCsv\" />
+    <Folder Include="Domain\Deliveries\Commands\UpdateDelivery\" />
+    <Folder Include="Domain\Deliveries\Queries\" />
+    <Folder Include="Domain\Deliveries\Queries\GetDeliveries\" />
+    <Folder Include="Domain\Deliveries\Queries\GetDeliveryById\" />
+    <Folder Include="Domain\Drivers\" />
+    <Folder Include="Domain\Drivers\Commands\" />
+    <Folder Include="Domain\Drivers\Commands\MarkDeliveryDelivered\" />
+    <Folder Include="Domain\Drivers\Queries\" />
+    <Folder Include="Domain\Nodes\" />
+    <Folder Include="Domain\Nodes\Commands\" />
+    <Folder Include="Domain\Nodes\Commands\CreateNode\" />
+    <Folder Include="Domain\Nodes\Commands\DeleteNode\" />
+    <Folder Include="Domain\Nodes\Commands\UpdateNode\" />
+    <Folder Include="Domain\Nodes\Queries\" />
+    <Folder Include="Domain\Nodes\Queries\GetNodeDetails\" />
+    <Folder Include="Domain\Nodes\Queries\GetNodes\" />
+    <Folder Include="Domain\Routes\Commands\BuildRoute\" />
+    <Folder Include="Domain\Routes\Commands\SendRouteToDriver\" />
+    <Folder Include="Domain\Routes\Queries\GetRouteDetails\" />
+    <Folder Include="Domain\Routes\Queries\GetRouteForDriver\" />
+    <Folder Include="Domain\Routes\Queries\GetRoutes\" />
+    <Folder Include="Domain\Vehicles\" />
+    <Folder Include="Domain\Vehicles\Commands\" />
+    <Folder Include="Domain\Vehicles\Commands\CreateVehicle\" />
+    <Folder Include="Domain\Vehicles\Commands\SetVehicleStatus\" />
+    <Folder Include="Domain\Vehicles\Commands\UnassignVehicle\" />
+    <Folder Include="Domain\Vehicles\Commands\UpdateVehicle\" />
+    <Folder Include="Domain\Vehicles\Queries\" />
+    <Folder Include="Domain\Vehicles\Queries\Dtos\" />
+    <Folder Include="Domain\Vehicles\Queries\GetVehicles\" />
+    <Folder Include="Routing\DistanceMatrixBuilder\" />
+    <Folder Include="Routing\Vrp\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,65 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.select {
+  height: 42px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 0 14px;
+  background: #fff;
+  font-size: 14px;
+  color: #0f172a;
+  max-width: 420px;
+}
+
+.vehicleList {
+  display: grid;
+  gap: 10px;
+}
+
+.vehicleCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+  transition: 0.2s ease;
+}
+
+.vehicleCard:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.checkbox {
+  margin-top: 3px;
+}
+
+.vehicleInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.plate {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.meta {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.empty {
+  padding: 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f8fafc;
+  color: #64748b;
+}

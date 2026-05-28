@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeliveryPlatform.Application\DeliveryPlatform.Application.csproj" />
+    <ProjectReference Include="..\DeliveryPlatform.Core\DeliveryPlatform.Core.csproj" />
+    <ProjectReference Include="..\DeliveryPlatform.Persistence.EFCore\DeliveryPlatform.Persistence.EFCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" />
+    <PackageReference Include="Microsoft.Extensions.Http" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Core\Domain\Nodes\Common\" />
+    <Folder Include="Core\Domain\Vehicles\Common\" />
+    <Folder Include="Geocoding\" />
+    <Folder Include="Routing\" />
+    <Folder Include="Routing\Geo\" />
+    <Folder Include="Routing\Graph\" />
+    <Folder Include="Routing\Graph\Providers\" />
+    <Folder Include="Routing\Osm\" />
+    <Folder Include="Routing\ShortestPath\" />
+  </ItemGroup>
+
+</Project>

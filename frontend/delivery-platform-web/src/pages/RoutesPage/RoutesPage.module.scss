@@ -1,0 +1,177 @@
+.page {
+  padding: 24px;
+  background: #f8fafc;
+  min-height: 100%;
+}
+
+.topBar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr 360px;
+  gap: 16px;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+.panelTitle {
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.routeCard {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  background: #fff;
+  transition: 0.2s ease;
+}
+
+.routeCard:hover {
+  border-color: #cbd5e1;
+  background: #f8fafc;
+}
+
+.routeCardActive {
+  border-color: #818cf8;
+  background: #eef2ff;
+}
+
+.routeId {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.routeMeta {
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 4px;
+}
+
+.mapPlaceholder {
+  min-height: 500px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  background: #f8fafc;
+}
+
+.detailsList {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.detailItem {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 12px;
+
+  span {
+    display: block;
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 6px;
+  }
+
+  strong {
+    color: #0f172a;
+    font-size: 15px;
+  }
+}
+
+.sectionTitle {
+  margin: 20px 0 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.segmentCard,
+.pointCard {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.segmentOrder,
+.pointOrder {
+  font-size: 13px;
+  font-weight: 700;
+  color: #4f46e5;
+  margin-bottom: 6px;
+}
+
+.segmentText,
+.pointText {
+  font-size: 14px;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.segmentMeta,
+.pointMeta {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.message,
+.empty,
+.error {
+  padding: 18px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+}
+
+.error {
+  color: #b91c1c;
+  background: #fff1f2;
+  border-color: #fecaca;
+}
+
+@media (max-width: 1200px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .mapPlaceholder {
+    min-height: 360px;
+  }
+}
