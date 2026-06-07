@@ -55,9 +55,9 @@ export const DashboardPage = () => {
                     marginBottom: 24,
                 }}
             >
-                <StatCard title="Заявок (на дату)" value={stats.pendingDeliveriesCount} />
+                <StatCard title="Заявок (07.06.2026)" value={stats.pendingDeliveriesCount} />
                 <StatCard title="Транспорт" value={stats.vehiclesCount} />
-                <StatCard title="Спланировано маршрутов" value={stats.plannedRoutesCount} />
+                <StatCard title="Сплановано маршрутов" value={stats.plannedRoutesCount} />
             </div>
 
             <div

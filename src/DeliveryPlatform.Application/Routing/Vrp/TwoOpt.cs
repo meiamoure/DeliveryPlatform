@@ -33,7 +33,6 @@ public static class TwoOpt
                     var c = best[k];
                     var d = best[k + 1];
 
-                    // если матрица может быть неполной — пропускай безопасно
                     if (!matrix.TryGet(a, b, out var ab) ||
                         !matrix.TryGet(c, d, out var cd) ||
                         !matrix.TryGet(a, c, out var ac) ||
@@ -50,7 +49,7 @@ public static class TwoOpt
                     {
                         ReverseInPlace(best, i, k);
                         improved = true;
-                        break; // first improvement
+                        break;
                     }
                 }
 
